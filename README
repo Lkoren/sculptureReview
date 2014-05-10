@@ -1,0 +1,18 @@
+Docs:
+
+The rc.local file has been modified to run the sculpture server on startup under
+user 'Pi', as well as to bring up the ethernet and wifi interfaces. If this needs
+to be reproduced add the following lines to /etc/rc.local:
+
+# Bring up the ethernet interface:
+# eth0 addition:
+sudo ifconfig eth0 ***.**.**.*** netmask 255.255.255.0 up
+
+# start the server under the correct user ID:
+sudo -u pi python /home/pi/sculpture/theSculpture.py &
+
+
+----
+
+A copy of the raspberry Pi public ssh key *must* be in the sculpture's
+~/.ssh/authorized_keys file.

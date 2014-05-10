@@ -1,0 +1,158 @@
+@mixin font-face($family, $path, $svg, $weight: normal, $style: normal) {
+  @font-face {
+	font-family: $family;
+    src: url('#{$path}.eot');
+    src: url('#{$path}.eot?#iefix') format('embedded-opentype'), url('#{$path}.woff') format('woff'), url('#{$path}.ttf') format('truetype'), url('#{$path}.svg##{$svg}') format('svg');
+    font-weight: $weight;
+    font-style: $style;
+	}
+}
+
+@include font-face('Arial-Black', './fonts/ariblk-webfont', 'ariblk-webfont');
+@include font-face('Univers-Bold', './fonts/univers-bold-webfont', 'univers-bold-webfont');
+
+$fontsize: 3.5em;
+
+html{
+
+}
+
+body{
+	font-size: 62.5%;
+	background-color: #111111;
+	color: #ffffff;
+	font-family: 'Univers-Bold';
+}
+
+
+h1{
+	font-family: 'Univers-Bold';
+}
+
+#wrapper{
+	position: relative;
+	width: 98%;
+}
+.inner{
+	padding-top: 3em;
+	margin: auto;
+	width: 70%;
+}
+p {
+	//font-size: 5em;
+	float: left;
+	position: relative;
+}
+
+input {
+	width: 100%;
+}
+
+ul {
+	list-style: none;
+	li {
+		list-style: none;
+	}
+	padding-left: 5px;
+}
+
+
+input.btn.btn-link {
+	color: #ffffff;
+	//font-size: 4em;
+	padding-bottom: 1.25em;
+	padding-left: 0.75em;
+	width: auto;
+}
+
+
+div.color {
+	border: 0px;
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+
+}
+
+.top-menu{
+	padding-top: 1.5em;
+	padding-bottom: 7em;
+	a {
+		//font-size: 4em;
+		color: #ffffff;
+		//padding-left: 0.75em;
+	}
+}
+
+.bottom-menu {
+	//font-size: 4em;
+	color: #ffffff;
+	a {
+		color: #ffffff;
+		//padding-left: 0.75em;
+	}
+}
+
+.loading {
+	padding: 3em;
+	display: none;
+}
+
+#password {
+	width: 75%;
+	font-size: 2em;
+	margin-bottom: 2em;
+	margin-top: 4em;
+}
+
+
+//colors for the menu buttons:
+.slow-swatch {
+	background-color: #e16327;
+	height: 35px;
+	width: 35px;
+}
+.medium-swatch {
+	background-color: #1a9a98;
+	height: 35px;
+	width: 35px;
+}
+.fast-swatch {
+	background-color: #fae500;
+	height: 35px;
+	width: 35px;
+}
+.return-swatch {
+	background-color: #136aa1;
+	height: 35px;
+	width: 35px;
+}
+.logout-swatch {
+	background-color: #8a9396;
+	height: 35px;
+	width: 35px;
+}
+.on-swatch {
+	background-color: #be2026;
+	height: 35px;
+	width: 35px;
+}
+.off-swatch {
+	background-color: #2d98cd;
+	height: 35px;
+	width: 35px;
+}
+.selector-swatch {
+	background-color: #f9c5c7;
+	height: 35px;
+	width: 35px;
+}
+.login-swatch {
+	background-color: #25783c;
+	height: 35px;
+	width: 35px;
+}
+
+
+
+

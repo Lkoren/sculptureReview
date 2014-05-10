@@ -1,0 +1,176 @@
+@font-face {
+  font-family: "Arial-Black";
+  src: url("./fonts/ariblk-webfont.eot");
+  src: url("./fonts/ariblk-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/ariblk-webfont.woff") format("woff"), url("./fonts/ariblk-webfont.ttf") format("truetype"), url("./fonts/ariblk-webfont.svg#ariblk-webfont") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  font-size: 62.5%;
+  background-color: #111111;
+  color: #ffffff;
+  font-family: 'Arial-Black'; }
+
+h1 {
+  font-family: 'Arial-Black';
+  font-size: 24px; }
+
+.inner {
+  padding-top: 3em;
+  margin: auto;
+  width: 90%; }
+
+input {
+  width: 100%; }
+
+input.btn.btn-link {
+  color: #ffffff;
+  padding-bottom: 1.25em;
+  padding-left: 0; }
+
+.loading {
+  background-image: './images/loading.jpg';
+  padding: 3em;
+  display: none; }
+
+p {
+  float: left;
+  position: relative;
+  font-size: 3em; }
+
+.top-menu {
+  padding-top: 1.5em;
+  padding-bottom: 3em; }
+
+/*
+.bottom-menu{
+	display: none;
+}*/
+ul {
+  list-style: none;
+  padding-left: 5px; }
+  ul li {
+    list-style: none; }
+
+#wrapper {
+  position: relative;
+  width: 98%; }
+  #wrapper a {
+    color: #ffffff; }
+
+.slow-swatch {
+  background-color: #e16327;
+  height: 30px;
+  width: 30px; }
+
+.medium-swatch {
+  background-color: #1a9a98;
+  height: 30px;
+  width: 30px; }
+
+.fast-swatch {
+  background-color: #fae500;
+  height: 30px;
+  width: 30px; }
+
+.return-swatch {
+  background-color: #136aa1;
+  height: 30px;
+  width: 30px; }
+
+.logout-swatch {
+  background-color: #8a9396;
+  height: 30px;
+  width: 30px; }
+
+.on-swatch {
+  background-color: #be2026;
+  height: 30px;
+  width: 30px; }
+
+.off-swatch {
+  background-color: #2d98cd;
+  height: 30px;
+  width: 30px; }
+
+.selector-swatch {
+  background-color: #f9c5c7;
+  height: 30px;
+  width: 30px; }
+
+.login-swatch {
+  background-color: #25783c;
+  height: 30px;
+  width: 30px; }
+
+.button-text {
+  padding-left: 1.4em; }
+
+.center {
+  margin: 0 auto;
+  width: 40%; }
+
+.loading-swatch {
+  background-color: #f9c5c7;
+  display: inline-block;
+  height: 30px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: 30px; }
+
+.loading-text {
+  margin-bottom: 30px;
+  margin-top: 15px;
+  padding-bottom: 20px;
+  text-align: center; }
+
+.lower {
+  clear: both;
+  height: 30px; }
+
+.upper {
+  height: 30px;
+  margin-bottom: 30px; }
+
+.loading-01 {
+  background-color: #f9c5c7; }
+
+.loading-02 {
+  background-color: #1a9a98; }
+
+.loading-03 {
+  background-color: #be2026; }
+
+.loading-04 {
+  background-color: #fae500; }
+
+.loading-05 {
+  background-color: #2d98cd; }
+
+.loading-06 {
+  background-color: #e16327; }
+
+.loading-07 {
+  background-color: #2d98cd; }
+
+.loading-08 {
+  background-color: #e16327; }
+
+.loading-09 {
+  background-color: #8a9396; }
+
+.loading-10 {
+  background-color: #25783c; }
+
+.loading-11 {
+  background-color: #be2026; }
+
+.loading-12 {
+  background-color: #fae500; }
+
+.swatch:active {
+  background-color: #ddcccc; }
+.swatch:focus {
+  background-color: #ddcccc; }
+.swatch:hover {
+  background-color: #ddcccc; }

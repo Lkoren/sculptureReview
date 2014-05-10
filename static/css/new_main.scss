@@ -1,0 +1,210 @@
+@mixin font-face($family, $path, $svg, $weight: normal, $style: normal) {
+  @font-face {
+	font-family: $family;
+    src: url('#{$path}.eot');
+    src: url('#{$path}.eot?#iefix') format('embedded-opentype'), url('#{$path}.woff') format('woff'), url('#{$path}.ttf') format('truetype'), url('#{$path}.svg##{$svg}') format('svg');
+    font-weight: $weight;
+    font-style: $style;
+	}
+}
+
+@include font-face('Arial-Black', './fonts/ariblk-webfont', 'ariblk-webfont');
+
+body{
+	font-size: 62.5%;
+	background-color: #111111;
+	color: #ffffff;
+	font-family: 'Arial-Black';
+}
+
+h1{
+	font-family: 'Arial-Black';
+	font-size: 24px;
+}
+.inner{
+	padding-top: 3em;
+	margin: auto;
+	width: 90%;
+}
+
+input {
+	width: 100%;
+}
+input.btn.btn-link {
+	color: #ffffff;
+	padding-bottom: 1.25em;
+	padding-left: 0;
+}
+.loading {
+	background-image: './images/loading.jpg';
+	padding: 3em;
+	display: none;
+	//display: block
+}
+p {
+	float: left;
+	position: relative;
+	font-size: 3em;
+}
+.top-menu{
+	padding-top: 1.5em;
+	padding-bottom: 3em;
+	//display: none;
+}
+/*
+.bottom-menu{
+	display: none;
+}*/
+ul {
+	list-style: none;
+	li {
+		list-style: none;
+	}
+	padding-left: 5px;
+}
+#wrapper{
+	position: relative;
+	width: 98%;
+	a {
+		color: #ffffff;
+	}
+}
+
+
+//colors for the menu buttons:
+
+$swatch-size: 30px;
+
+.slow-swatch {
+	background-color: #e16327;
+	height: $swatch-size;
+	width: $swatch-size;
+}
+.medium-swatch {
+	background-color: #1a9a98;
+	height: $swatch-size;
+	width: $swatch-size;
+}
+.fast-swatch {
+	background-color: #fae500;
+	height: $swatch-size;
+	width: $swatch-size;
+}
+.return-swatch {
+	background-color: #136aa1;
+	height: $swatch-size;
+	width: $swatch-size;
+}
+.logout-swatch {
+	background-color: #8a9396;
+	height: $swatch-size;
+	width: $swatch-size;
+}
+.on-swatch {
+	background-color: #be2026;
+	height: $swatch-size;
+	width: $swatch-size;
+}
+.off-swatch {
+	background-color: #2d98cd;
+	height: $swatch-size;
+	width: $swatch-size;
+}
+.selector-swatch {
+	background-color: #f9c5c7;
+	height: $swatch-size;
+	width: $swatch-size;
+}
+.login-swatch {
+	background-color: #25783c;
+	height: $swatch-size;
+	width: $swatch-size;
+}
+
+.button-text {
+	// The bottom buttons in both screens aren't input elements, just divs and hyperlinks, so they need
+	// slightly different padding.
+	padding-left: 1.4em;
+}
+
+////Loading screen:
+
+.center{
+	margin: 0 auto;
+	width: 40%;
+}
+
+.loading-swatch {
+	background-color: #f9c5c7;
+	display: inline-block;
+	height: $swatch-size;
+	margin-left: 2px;
+	margin-right: 2px;
+	width: $swatch-size;
+}
+$swatch-vert-margin: 30px;
+
+.loading-text{
+	margin-bottom: $swatch-vert-margin;
+	margin-top: 15px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.lower{
+	clear: both;
+	height: $swatch-size;
+}
+.upper{
+	height: $swatch-size;
+	margin-bottom: $swatch-vert-margin;
+}
+
+.loading-01{
+	background-color: #f9c5c7;
+}
+.loading-02{
+	background-color: #1a9a98;
+}
+.loading-03{
+	background-color: #be2026;
+}
+.loading-04{
+	background-color: #fae500;
+}
+.loading-05{
+	background-color: #2d98cd;
+}
+.loading-06{
+	background-color: #e16327;
+}
+.loading-07{
+	background-color: #2d98cd;
+}
+.loading-08{
+	background-color: #e16327;
+}
+.loading-09{
+	background-color: #8a9396;
+}
+.loading-10{
+	background-color: #25783c;
+}
+.loading-11{
+	background-color: #be2026;
+}
+.loading-12{
+	background-color: #fae500;
+}
+////All swatches:
+.swatch {
+	&:active{
+		background-color: #ddcccc;
+	}
+	&:focus{
+		background-color: #ddcccc;
+	}
+	&:hover{
+		background-color: #ddcccc;
+	}
+}

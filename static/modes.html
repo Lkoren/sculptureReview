@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+    <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+    <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+    <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Sculpture Mode selector</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="static/css/normalize.min.css">
+        <link rel="stylesheet" href="static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="static/css/new_main.css">
+    </head>
+    <body>
+        <div id = "wrapper">
+            <div class="inner">
+                <form enctype="application/x-www-form-urlencoded" id="mode-form">
+                    <h1>Mode Selector</h1>
+                    <hr>
+                    <div class="top-menu">
+                        <ul>
+                            <li>
+                                <div class="btn">
+                                    <input class="btn btn-link slow-swatch swatch" name='slow' id="slow-swatch" type='button'/><input class="btn btn-link slow" name="slow" id="slow" value="SLOW" type="button"/>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="btn">
+                                    <input class="btn btn-link medium-swatch swatch" name='medium' id="medium-swatch" type='button'/><input class="btn btn-link medium" name='medium' id="medium" value='MEDIUM' type='button'/>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="btn">
+                                    <input class="btn btn-link fast-swatch swatch" name='fast' id="fast-swatch" type='button'/><input class="btn btn-link" name='fast' id="fast" value='FAST' type='button'/>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bottom-menu">
+                        <ul>
+                            <li>
+                                <div class="btn">
+                                    <a href="/main"><div class="color btn btn-link return-swatch swatch" id='return-swatch'></div></a><a href="/main" class='button-text'>BACK</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="loading">
+                        <div class="upper">
+                            <div class = 'loading-01 loading-swatch swatch'></div>
+                            <div class = 'loading-02 loading-swatch swatch'></div>
+                            <div class = 'loading-03 loading-swatch swatch'></div>
+                            <div class = 'loading-04 loading-swatch swatch'></div>
+                            <div class = 'loading-05 loading-swatch swatch'></div>
+                            <div class = 'loading-06 loading-swatch swatch'></div>
+                        </div>
+                        <div class='loading-text'>
+                            <div class="center"><p>LOADING</p></div>
+
+                        </div>
+                        <div class="lower">
+                            <div class = 'loading-07 loading-swatch swatch'></div>
+                            <div class = 'loading-08 loading-swatch swatch'></div>
+                            <div class = 'loading-09 loading-swatch swatch'></div>
+                            <div class = 'loading-10 loading-swatch swatch'></div>
+                            <div class = 'loading-11 loading-swatch swatch'></div>
+                            <div class = 'loading-12 loading-swatch swatch'></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src ="static/js/main.js"></script>
+    </body>
+</html>
